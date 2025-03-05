@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 // Endpoint do generowania wyników
-app.post("/api/generateLottoNumbers", async (req, res) => {
+app.post("https://testzstib.onrender.com/api/generateLottoNumbers", async (req, res) => {
   const { selectedNumbers } = req.body;
 
   // Sprawdzenie poprawności danych wejściowych
